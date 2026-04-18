@@ -1,0 +1,88 @@
+<Project>
+  <!-- Shared game DLL references for all ETSMods projects -->
+  <PropertyGroup>
+    <GameLibs>/home/felipe/Desktop/my/VRisingDedicatedServer/BepInEx/interop</GameLibs>
+    <BepInExCore>/home/felipe/Desktop/my/VRisingDedicatedServer/BepInEx/core</BepInExCore>
+    <PluginsDir>/home/felipe/Desktop/my/VRisingDedicatedServer/BepInEx/plugins</PluginsDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ProjectM">
+      <HintPath>$(GameLibs)/ProjectM.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Shared">
+      <HintPath>$(GameLibs)/ProjectM.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Shared.Systems">
+      <HintPath>$(GameLibs)/ProjectM.Shared.Systems.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Gameplay.Systems">
+      <HintPath>$(GameLibs)/ProjectM.Gameplay.Systems.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Misc.Systems">
+      <HintPath>$(GameLibs)/ProjectM.Misc.Systems.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Behaviours">
+      <HintPath>$(GameLibs)/ProjectM.Behaviours.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Scripting">
+      <HintPath>$(GameLibs)/ProjectM.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.ScriptableSystems">
+      <HintPath>$(GameLibs)/ProjectM.ScriptableSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Terrain">
+      <HintPath>$(GameLibs)/ProjectM.Terrain.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Gameplay.Scripting">
+      <HintPath>$(GameLibs)/ProjectM.Gameplay.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.Presentation.Systems">
+      <HintPath>$(GameLibs)/ProjectM.Presentation.Systems.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectM.CodeGeneration">
+      <HintPath>$(GameLibs)/ProjectM.CodeGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="Stunlock.Core">
+      <HintPath>$(GameLibs)/Stunlock.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Stunlock.Network">
+      <HintPath>$(GameLibs)/Stunlock.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>$(GameLibs)/Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>$(GameLibs)/Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>$(GameLibs)/Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>$(GameLibs)/Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>$(GameLibs)/Unity.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Physics">
+      <HintPath>$(GameLibs)/Unity.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameLibs)/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameLibs)/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>$(GameLibs)/Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(GameLibs)/Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>$(BepInExCore)/Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="VampireCommandFramework">
+      <HintPath>$(PluginsDir)/VampireCommandFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

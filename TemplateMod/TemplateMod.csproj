@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <AssemblyName>TemplateMod</AssemblyName>
+        <Description>Template mod.</Description>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>TemplateMod</RootNamespace>
+        <BepInExPluginGuid>TemplateMod</BepInExPluginGuid>
+        <Authors>Willis</Authors>
+        <DriveLetter Condition="Exists('E:\')">E:</DriveLetter>
+        <DriveLetter Condition="!Exists('E:\')">C:</DriveLetter>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.1.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\ModCore\ModCore.csproj" />
+    </ItemGroup>
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Condition="'$(DriveLetter)' != ''" Command="copy &quot;$(ProjectDir)bin\Debug\net6.0\*TemplateMod.dll*&quot; &quot;$(DriveLetter)\Program Files (x86)\Steam\steamapps\common\VRisingDedicatedServer\BepInEx\BloodstonePlugins&quot;" />
+    </Target>
+</Project>

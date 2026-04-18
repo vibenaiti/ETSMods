@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <AssemblyName>Moderation</AssemblyName>
+        <Description>Moderation mod.</Description>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>Moderation</RootNamespace>
+        <BepInExPluginGuid>Moderation</BepInExPluginGuid>
+        <Authors>Willis</Authors>
+
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.696" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.1.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\ModCore\ModCore.csproj" />
+    </ItemGroup>
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="$(ProjectDir)bin/Debug/net6.0/Moderation.dll" DestinationFolder="/data/VRisingServer/BepInEx/plugins" Condition="Exists('/data/VRisingServer/BepInEx/plugins')" />
+  </Target>
+</Project>

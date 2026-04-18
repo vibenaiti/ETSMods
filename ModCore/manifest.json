@@ -1,0 +1,10 @@
+{
+  "name": "AdminCommands",
+  "description": "Provides a wide variety of chat commands for admins",
+  "version_number": "1.0.0",
+  "dependencies": [
+    "BepInEx-BepInExPack_V_Rising-1.0.0",
+    "deca-Bloodstone-0.1.6"
+  ],
+  "website_url": "https://github.com/emelonakos/AdminCommands"
+}

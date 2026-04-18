@@ -1,0 +1,1000 @@
+<Project Sdk="Microsoft.NET.Sdk.dll">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="0Harmony.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\0Harmony.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="AsmResolver.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\AsmResolver.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="AsmResolver.DotNet.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\AsmResolver.DotNet.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="AsmResolver.PE.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\AsmResolver.PE.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="AsmResolver.PE.File.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\AsmResolver.PE.File.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="AssetRipper.CIL.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\AssetRipper.CIL.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="AssetRipper.Primitives.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\AssetRipper.Primitives.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="AssetRipper.VersionUtilities.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\AssetRipper.VersionUtilities.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Backtrace.Unity.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Backtrace.Unity.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="BepInEx.Core.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\BepInEx.Core.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="BepInEx.Preloader.Core.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\BepInEx.Preloader.Core.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="BepInEx.Unity.Common.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\BepInEx.Unity.Common.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="BepInEx.Unity.IL2CPP.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\BepInEx.Unity.IL2CPP.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="com.rlabrecque.steamworks.net.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\com.rlabrecque.steamworks.net.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="com.stunlock.network.eos.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\com.stunlock.network.eos.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="com.stunlock.platform.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\com.stunlock.platform.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="com.stunlock.platform.pc.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\com.stunlock.platform.pc.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Cpp2IL.Core.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Cpp2IL.Core.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Disarm.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Disarm.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Gee.External.Capstone.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Gee.External.Capstone.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Iced.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Iced.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppInterop.Common.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Il2CppInterop.Common.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppInterop.Generator.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Il2CppInterop.Generator.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppInterop.HarmonySupport.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Il2CppInterop.HarmonySupport.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppInterop.Runtime.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Il2CppInterop.Runtime.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppMono.Security.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppMono.Security.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2Cppmscorlib.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2Cppmscorlib.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Configuration.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Configuration.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Core.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Core.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Data.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Data.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Drawing.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Drawing.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Net.Http.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Net.Http.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Numerics.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Numerics.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Runtime.CompilerServices.Unsafe.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Runtime.Serialization.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Xml.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Xml.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Il2CppSystem.Xml.Linq.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Il2CppSystem.Xml.Linq.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="LibCpp2IL.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\LibCpp2IL.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Lidgren.Network.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Lidgren.Network.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="MagicaCloth.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\MagicaCloth.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Malee.ReorderableList.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Malee.ReorderableList.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Mono.Cecil.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Mono.Cecil.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Mono.Cecil.Mdb.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Mono.Cecil.Mdb.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Mono.Cecil.Pdb.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Mono.Cecil.Pdb.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Mono.Cecil.Rocks.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\Mono.Cecil.Rocks.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="MonoMod.RuntimeDetour.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="MonoMod.Utils.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\MonoMod.Utils.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Newtonsoft.Json.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Newtonsoft.Json.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Behaviours.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Behaviours.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Camera.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Camera.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.CastleBuilding.Systems.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.CastleBuilding.Systems.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.CastleDyeSystem.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.CastleDyeSystem.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.CodeGeneration.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.CodeGeneration.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Conversion.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Conversion.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.DualsensePC.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.DualsensePC.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Editor.SampleHandler.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Editor.SampleHandler.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Gameplay.Scripting.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Gameplay.Scripting.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Gameplay.Systems.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Gameplay.Systems.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.GeneratedNetCode.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.GeneratedNetCode.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Haptics.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Haptics.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.HUD.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.HUD.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Hybrid.Performance.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Hybrid.Performance.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.LiveBuildPerformanceTests.Utilities.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.LiveBuildPerformanceTests.Utilities.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Misc.Systems.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Misc.Systems.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Pathfinding.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Pathfinding.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.PerformanceTests.Editor.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.PerformanceTests.Editor.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Presentation.Systems.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Presentation.Systems.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Roofs.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Roofs.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.ScriptableSystems.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.ScriptableSystems.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Shared.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Shared.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Shared.ColorData.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Shared.ColorData.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Shared.Systems.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Shared.Systems.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Terrain.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Terrain.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="ProjectM.Wind.Shared.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\ProjectM.Wind.Shared.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="RCONServerLib.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\RCONServerLib.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="RootMotion.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\RootMotion.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="RTLTMPro.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\RTLTMPro.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="SemanticVersioning.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\SemanticVersioning.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Sequencer.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Sequencer.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="StableNameDotNet.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\StableNameDotNet.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Console.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Console.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.ContentTests.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.ContentTests.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Core.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Core.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Fmod.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Fmod.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Localization.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Localization.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Metrics.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Metrics.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Network.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Network.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Network.EosSdk.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Network.EosSdk.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Network.Lidgren.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Network.Lidgren.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Network.Steam.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Network.Steam.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Stunlock.Tools.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Stunlock.Tools.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Burst.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Burst.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Burst.Unsafe.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Burst.Unsafe.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Collections.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Collections.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Collections.LowLevel.ILSupport.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Deformations.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Deformations.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Entities.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Entities.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Entities.Graphics.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Entities.Graphics.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Entities.Hybrid.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Entities.Hybrid.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Entities.Hybrid.HybridComponents.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Entities.Hybrid.HybridComponents.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.InputSystem.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.InputSystem.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.InputSystem.ForUI.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.InputSystem.ForUI.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Mathematics.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Mathematics.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Mathematics.Extensions.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Mathematics.Extensions.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Mathematics.Extensions.Hybrid.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Mathematics.Extensions.Hybrid.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Physics.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Physics.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Physics.Hybrid.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Physics.Hybrid.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Profiling.Core.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Profiling.Core.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.RenderPipelines.Core.Runtime.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.RenderPipelines.HighDefinition.Config.Runtime.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.RenderPipelines.HighDefinition.Runtime.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Scenes.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Scenes.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Serialization.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Serialization.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Analytics.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Analytics.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.Configuration.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.Configuration.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.Device.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.Device.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.Environments.Internal.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.Environments.Internal.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.Internal.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.Internal.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.Registration.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.Registration.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.Scheduler.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.Scheduler.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.Telemetry.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.Telemetry.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Services.Core.Threading.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Services.Core.Threading.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.TextMeshPro.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.TextMeshPro.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Transforms.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Transforms.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.Transforms.Hybrid.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.Transforms.Hybrid.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="Unity.VisualEffectGraph.Runtime.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.AccessibilityModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.AccessibilityModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.AIModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.AIModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.AndroidJNIModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.AndroidJNIModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.AnimationModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.AnimationModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.AssetBundleModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.AudioModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.AudioModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.ClothModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.ClothModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.ClusterInputModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.ClusterInputModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.ClusterRendererModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.ClusterRendererModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.ContentLoadModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.ContentLoadModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.CoreModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.CoreModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.CrashReportingModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.CrashReportingModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.DirectorModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.DirectorModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.DSPGraphModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.DSPGraphModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.GameCenterModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.GameCenterModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.GIModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.GIModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.GridModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.GridModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.HotReloadModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.HotReloadModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.ImageConversionModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.IMGUIModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.IMGUIModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.InputLegacyModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.InputModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.InputModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.JSONSerializeModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.LocalizationModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.LocalizationModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.ParticleSystemModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.PerformanceReportingModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.Physics2DModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.Physics2DModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.PhysicsModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.PhysicsModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.ProfilerModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.ProfilerModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.PropertiesModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.PropertiesModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.ScreenCaptureModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.SharedInternalsModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.SpriteMaskModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.SpriteShapeModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.StreamingModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.StreamingModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.SubstanceModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.SubstanceModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.SubsystemsModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.SubsystemsModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.TerrainModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.TerrainModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.TerrainPhysicsModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.TextCoreFontEngineModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.TextCoreTextEngineModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.TextRenderingModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.TilemapModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.TilemapModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.TLSModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.TLSModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UI.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UI.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UIElementsModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UIElementsModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UIModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UIModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UmbraModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UmbraModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityAnalyticsCommonModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityAnalyticsModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityConnectModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityConnectModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityCurlModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityCurlModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityTestProtocolModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityWebRequestAssetBundleModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityWebRequestAudioModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityWebRequestModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityWebRequestTextureModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.UnityWebRequestWWWModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.VehiclesModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.VehiclesModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.VFXModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.VFXModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.VideoModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.VideoModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.VirtualTexturingModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.VirtualTexturingModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.VRModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.VRModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.WindModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.WindModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="UnityEngine.XRModule.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\UnityEngine.XRModule.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="VivoxUnity.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\interop\VivoxUnity.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+    <None Include="WasmDisassembler.dll">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\VRisingBeta\VRising_Server\BepInEx\core\WasmDisassembler.dll</HintPath>
+      <Pack>true</Pack>
+      <PackagePath>lib\$(TargetFramework)\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
